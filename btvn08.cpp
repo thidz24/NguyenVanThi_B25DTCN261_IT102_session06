@@ -7,7 +7,7 @@ int main() {
 	printf("nhap so nguyen duong: ");
 	scanf("%d", &b);
 	if(a <= 0 || b <= 0) {
-		printf("Vui long nhap dung gia tri");
+		printf("Please enter correct value");
 		return 1; 
 	} 
 	x = a;
@@ -19,6 +19,6 @@ int main() {
 	} 
 	least_common_divisor = a;
     least_common_multiple = (x * y) / least_common_divisor; 
-    printf("Boi chung nho nhat la: %d", least_common_multiple);
+    printf("The least common multiple is: %d", least_common_multiple);
 	return 0; 
 } 

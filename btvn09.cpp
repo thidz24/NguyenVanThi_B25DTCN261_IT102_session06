@@ -10,46 +10,47 @@ int main() {
 	scanf("%d", &b);
 		printf("Nhap ba so nguyen: ");
 	scanf("%d", &c);
-	printf("1.Tinh tong\n");
-	printf("2.Tinh trung binh cong\n");
-	printf("3.Tim so nho nhat trong 3 so\n");
-	printf("4.Tim so lon nhat trong 3 so\n");
-	printf("5.Thoat\n");
+	printf("  MENU  \n"); 
+	printf("1. SUM\n");
+	printf("2. AVERAGE\n");
+	printf("3. MIN\n");
+	printf("4. MAX\n");
+	printf("5. OUT\n");
 	printf("Nhap lua chon ban muon: ");
 	scanf("%d", &choose);
 	do {
 	switch(choose) {
 		case 1:
 		result = a + b + c;
-		printf("Tong cua ba so là: %.0f\n", result);
+		printf("The sum of three numbers is: %.0f\n", result);
 		break; 
 		case 2:
 		result = (float)(a + b + c)/3;
-		printf("Trung binh cua ba so là: %.2f\n", result);
+		printf("The average of three numbers is: %.2f\n", result);
 		break; 
 		case 3:
 		 if (a<b && a<c) {
-		 	printf("so nho nhat cua ba so la: %d\n", a); 
+		 	printf("The min is: %d\n", a); 
 		 } else if(b<a && b<c ) {
-		 	printf("so nho nhat cua ba so la: %d\n", b); 
+		 	printf("The min is: %d\n", b); 
 		 } else if(c<a && c<b) {
-		 	printf("so nho nhat cua ba so la: %d\n", c); 
+		 	printf("The min is: %d\n", c); 
 		 } break; 
 		 case 4:
 		  if (a>b && a>c) {
-		 	printf("so lon nhat cua ba so la: %d\n", a); 
+		 	printf("The max is: %d\n", a); 
 		 } else if(b>a && b>c ) {
-		 	printf("so lon nhat cua ba so la: %d\n", b); 
+		 	printf("The max is: %d\n", b); 
 		 } else if(c>a && c>b) {
-		 	printf("so lon nhat cua ba so la: %d\n", c); 
+		 	printf("The max is: %d\n", c); 
 		 } break; 
 		 case 5:
-		 printf("Vui long an Enter lan nua de thoat");
+		 printf("Please press Enter again to exit!");
 		 break; 
 		 defualt:
-		 printf("vui long nhap lai\n");
+		 printf("Please re-enter\n");
 	} if(choose != 5){
-		 	printf("lua chon tiep: ");
+		 	printf("Next selection: ");
 			 scanf("%d", &choose); 
 			 
 		 } 

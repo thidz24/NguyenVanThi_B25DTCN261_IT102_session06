@@ -6,7 +6,7 @@ int main() {
 	printf("Nhap N: ");
 	scanf("%d", &N);
 	if (N<0) {
-		printf("Loi gia tri hay nhap lai");
+		printf("Value error please re-enter");
 		return 0; 
 	} 
 	for (i = 1; i<=N; i++ ) {

@@ -7,7 +7,7 @@ int main() {
 	printf("nhap so nguyen duong: ");
 	scanf("%d", &b);
 	if(a <= 0 || b <= 0) {
-		printf("Vui long nhap dung gia tri");
+		printf("Please enter correct value");
 		return 1; 
 	} 
 	while(b != 0) {
@@ -15,6 +15,6 @@ int main() {
 		a = b;
 		b = temp; 
 	} 
-	printf("Uoc chung lon nhat: %d\n", a);
+	printf("Greatest common divisor: %d\n", a);
 	return 0; 
 } 
